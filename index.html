@@ -26,8 +26,8 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#mystory">My Story</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="https://github.com/Kaylynnlaster">Projects</a></li>
+          <li><a href="#myProjects">Projects</a></li>
+          <li><a href="https://github.com/Kaylynnlaster">Github</a></li>
           <li><a href="https://www.linkedin.com/in/kayanna-laster-3a398415a/">LinkedIn</a></li>
           <li><a href = "mailto: kayannalaster@gmail.com">Contact Me!</a></li>
         </ul>
@@ -38,10 +38,10 @@
         <div class="contentb">
           <p class="subtitle">Hello World!</p>
           <h1 class="title">
-            <span>I'm Kayanna Laster<br />a Backend Java Developer </span>
+            <span>I'm Kayanna Laster<br />a Fullstack Java Developer </span>
           </h1>
           <p class="description">
-            Here you can find my skills and projects ranging from springboot and JDBC to AWS!
+            Here you can find my skills and projects ranging from springboot and JDBC to AWS and!
             Feel free to download my resume and get in contact with me below.
           </p>
           <div class="buttons">
@@ -82,32 +82,143 @@
           </div>
           <div class="container left">
             <div class="content">
-              <h2>2015</h2>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <h2>College Graduation</h2>
+              <p>I graduated from Drury University in May of 2022 with a degree in Computer Science and minors in mathematics and animation</p>
             </div>
           </div>
           <div class="container right">
             <div class="content">
-              <h2>2012</h2>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <h2>Cognixia</h2>
+              <p>I was recruited by Cognixia to be a part of their JUMP Program where I challenged myself and learn new skills such as Springboot and AWS</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div id="skills">
-        <h1>My Skills</h1>
-          <ul>
-            <li>JavaScipt</li>
-            <li>AWS</li>
-            <li>MySQL</li>
-            <li>Java</li>
-            <li>Springboot</li>
-            <li>Html</li>
-          </ul>
+    <section id="myProjects">
+      <h1 class="title">
+        My Projects
+      </h1>
+      <div class="projectbuttons">
+      <button class="buttonp" onclick="filterObjects('all')"> Show all Projects</button>
+      <button class="buttonp" onclick="filterObjects('Java')"> Java Projects</button>
+      <button class="buttonp" onclick="filterObjects('AWS')"> AWS Projects</button>
+      <button class="buttonp" onclick="filterObjects('React')"> React Projects</button>
+      <button class="buttonp" onclick="filterObjects('Web')"> HTML/CSS/JS Projects</button>
+      <button class="buttonp" onclick="filterObjects('SpringMy')"> Springboot(MySQL) Project</button>
+      <button class="buttonp" onclick="filterObjects('SpringMo')"> Springboot(MongoDB) Project</button>
+    </div>
+    <div class = "projectCards">
+      <div class="polaroid">
+        <button class="pro AWS" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/download.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>AWS: Wordpress website Deployment</p>
+        </div>
+        </button>
       </div>
+      <div class="polaroid">
+        <button class="pro AWS" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/download.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>AWS: Serverless Web App</p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro AWS" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/download.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>AWS: Amazon Connect Call center on AWS</p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro Web" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/web.jpg" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>HTML/CSS/JS: Weather App</p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro Web" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/web.jpg" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>HTML/CSS/JS: Basic Ecommerance Website</p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro Web" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/web.jpg" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>HTML/CSS/JS: Product landing page</p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro React" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/react.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>React: Restaurant Web application</p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro React" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/react.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>React: Modern Website with Tailwind</p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro React" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/react.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>React: Responsive Modern Website</p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro SpringMy" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/spring.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>Springboot: Basic CRUD Book App </p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro SpringMy" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/spring.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>Springboot: Exercise API </p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro SpringMo" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/spring.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>Springboot: To-Do Crud API </p>
+        </div>
+        </button>
+      </div>
+      <div class="polaroid">
+        <button class="pro Java" onclick="window.location.href ='https://github.com/Kaylynnlaster'">
+        <img src="images/java.png" alt="AWS" style="width:100%">
+        <div class="containerp">
+        <p>Java: Chatting App </p>
+        </div>
+        </button>
+      </div>
+    </div>
     </section>
   </section>
+  <footer class="footer">
+    <p>Copyright &copy; Devpractical.com</p>
+  </footer>
+  <script src="script.js"></script>
   </body>
 </html>
